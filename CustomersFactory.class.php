@@ -60,9 +60,12 @@ class CustomersFactory extends PersonsFactoryAbstract
             return false;
         }
         $info = $this->currentCustomer->getInfo();
+        if (!isset($info) || !is_array($info) || sizeof($info) == 0) {
+            return false;
+        }
         $contracts = $this->currentCustomer->getContracts();
-        $status = $this->currentCustomer->getServices($status);
+        $services = $this->currentCustomer->getServices($status);
 
-        return compact('info', 'contracts', 'status');
+        return compact('info', 'contracts', 'services');
     }
 }

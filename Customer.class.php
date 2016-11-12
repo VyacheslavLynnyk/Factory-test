@@ -132,7 +132,7 @@ class Customer implements CustomerInterface
      */
     public function getServices(array $status = [])
     {
-        if (isset($status) && sizeof($status) > 0) {
+        if (isset($status) && sizeof($status) > 0 & isset($this->services)) {
             $filtredServices = [];
             foreach ($this->services as $id => $service) {
                 if (in_array($service['status'], $status) ) {
