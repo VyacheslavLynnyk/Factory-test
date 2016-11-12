@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - test_wnet@localhost" uuid="1231ab58-01df-418a-8406-d4bb6661f154">
+    <database-info product="MySQL" version="5.7.16-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="test_wnet"/>
+      <table id="2" parent="1" name="obj_contracts"/>
+      <table id="3" parent="1" name="obj_customers"/>
+      <table id="4" parent="1" name="obj_services"/>
+      <column id="5" parent="2" name="id_contract">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="6" parent="2" name="id_customer">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="7" parent="2" name="number">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="8" parent="2" name="date_sign">
+        <data-type>date</data-type>
+      </column>
+      <column id="9" parent="2" name="staff_number">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <index id="10" parent="2" name="fk_obj_contracts_1_idx">
+        <columns>id_customer</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="11" parent="2" name="PRIMARY">
+        <columns>id_contract</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="12" parent="2" name="obj_contracts_obj_customers_id_customer_fk">
+        <columns>id_customer</columns>
+        <ref-key>~.obj_customers.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="13" parent="3" name="id_customer">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="14" parent="3" name="name_customer">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="15" parent="3" name="company">
+        <data-type>enum(&apos;company_1&apos;, &apos;company_2&apos;, &apos;company_3&apos;)</data-type>
+      </column>
+      <key id="16" parent="3" name="PRIMARY">
+        <columns>id_customer</columns>
+        <primary>1</primary>
+      </key>
+      <column id="17" parent="4" name="id_service">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="18" parent="4" name="id_contract">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="19" parent="4" name="title_service">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="4" name="status">
+        <data-type>enum(&apos;work&apos;, &apos;connecting&apos;, &apos;disconnected&apos;)</data-type>
+      </column>
+      <index id="21" parent="4" name="fk_obj_services_1_idx">
+        <columns>id_contract</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="22" parent="4" name="PRIMARY">
+        <columns>id_service</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="23" parent="4" name="obj_services_obj_contracts_id_contract_fk">
+        <columns>id_contract</columns>
+        <ref-key>~.obj_contracts.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>
