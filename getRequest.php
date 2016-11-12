@@ -16,10 +16,11 @@ if ($_POST) {
             $status = [];
         }
 
-
         $customerFactory = new CustomersFactory();
         $customerFactory->search($search);
 
+        $data = $customerFactory->getData($status);
+        $customerFactory->search($search);
         $data = $customerFactory->getData($status);
         if ($data !== false) {
             include 'template.php';
@@ -28,4 +29,5 @@ if ($_POST) {
     }
 
 }
-echo 'Нет клиента';
+?>
+<h3>Нет клиента по данному запросу</h3>

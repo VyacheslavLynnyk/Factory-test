@@ -18,8 +18,9 @@
 	<form id="customer-from">
 		<div class="form-group">
 			<label>Поиск:
-				<input type="search" class="form-control" name="search">
+				<input type="text" class="form-control" name="search">
 			</label>
+			<span class="help-block" style="display: none;">Допустим только числовой ввод</span>
 		</div>
 		<div class="checkbox">
 			<label><input type="checkbox" name="status[work]" value="1"> work:</label>
@@ -40,6 +41,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 		crossorigin="anonymous"></script>
+<script src="./js/jquery.form.validation.js"></script>
 <script src='./js/main.js'></script>
 </body>
 </html>

@@ -1,18 +1,3 @@
-
-console.log('main js');
-// $('#customer-from .send').on('click', function(){
-//     console.log($( this ).parent('form').serialize());
-//     var host = window.location.host;
-//     $.post(
-//         'http://' + host + '/getRequest.php',
-//         $( this ).serialize(),
-//         function(response){
-//             console.log(response);
-//         });
-//
-// });
-
-
 $( "#customer-from" ).on( "submit", function( event ) {
     event.preventDefault();
     var location = window.location.href;
@@ -26,3 +11,19 @@ $( "#customer-from" ).on( "submit", function( event ) {
         });
 
 });
+
+
+
+$("#customer-from .send").validation(
+    $("#customer-from input[name=search]").validate({
+        test: "blank digits",
+        invalid: function(){
+            $(this).parent('label').siblings('.help-block').show();
+            $(this).parent('label').addClass('has-error');
+        },
+        valid: function(){
+            $(this).parent('label').siblings('.help-block').hide();
+            $(this).parent('label').removeClass('has-error');
+        }
+    })
+);

@@ -14,7 +14,7 @@ class CustomersFactory extends PersonsFactoryAbstract
         self::$personsCache[$id] = $obj;
     }
 
-    public static function setNameId($name, $id)
+    public static function setNameId(string $name, int $id)
     {
         self::$personsNameId[$name] = $id;
     }

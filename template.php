@@ -23,7 +23,7 @@
             <td><?= $contract['date_sign'] ?></td>
         </tr>
     <?php endforeach; ?>
-
+    <?php if (isset($data['services']) && is_array($data['services']) && sizeof($data['services']) > 0) : ?>
     <tr>
         <td colspan=2><b>информация про сервисы</b></td>
     </tr>
@@ -36,4 +36,5 @@
             <?php endforeach; ?>
         </td>
     </tr>
+    <?php endif; ?>
 </table>

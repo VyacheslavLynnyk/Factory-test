@@ -43,9 +43,8 @@ class Customer implements CustomerInterface
             $id = (int) $idOrName;
             $sql .= ' ON cu.id_customer ='. $id .' AND cu.id_customer = co.id_customer';
         }
-        echo $sql;
         $res = mysqli_query($this->connection, $sql);
-        var_dump($res);
+        
         // Set info (customer info) and contracts
         // $i is iterator
         $i = -1;
@@ -81,11 +80,10 @@ class Customer implements CustomerInterface
             $this->services[$row['id_service']]['status'] = $row['status'];
         }
 
-
+        // Save to cache customer class
         if (!isset($id) && !is_numeric($idOrName)) {
-            CustomersFactory::setNameId($this->info['id_customer'], $idOrName);
+            CustomersFactory::setNameId($idOrName, $this->info['id_customer']);
         }
-
         CustomersFactory::setCache($this->info['id_customer'], $this);
 
         return $this;
@@ -141,7 +139,8 @@ class Customer implements CustomerInterface
             }
             return $filtredServices;
         }
-        return $this->services;
+        // If services isn't set
+        return [];//$this->services;
     }
 
     /**
