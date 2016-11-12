@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2d95f40-4eb3-40e6-9ee3-6ff63dff2d9b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/view.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test-wnet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,6 +135,7 @@
         <option value="$PROJECT_DIR$/CustomersFactory.class.php" />
         <option value="$PROJECT_DIR$/getRequest.php" />
         <option value="$PROJECT_DIR$/view.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -150,8 +151,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1633" />
-    <option name="y" value="-1026" />
+    <option name="x" value="47" />
+    <option name="y" value="24" />
     <option name="width" value="1633" />
     <option name="height" value="1026" />
   </component>
@@ -197,20 +198,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test-wnet" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test-wnet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test-wnet" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,15 +251,15 @@
       <updated>1478875617597</updated>
       <workItem from="1478875620100" duration="2444000" />
       <workItem from="1478881108395" duration="10686000" />
-      <workItem from="1478943407417" duration="23674000" />
+      <workItem from="1478943407417" duration="23881000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36804000" />
+    <option name="totallyTimeSpent" value="37011000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1633" y="-1026" width="1633" height="1026" extended-state="6" />
+    <frame x="47" y="24" width="1633" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955262" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -491,6 +478,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
