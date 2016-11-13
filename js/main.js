@@ -7,7 +7,6 @@ $( "#customer-from" ).on( "submit", function( event ) {
         'getRequest.php',
         data,
         function(response){
-            console.log(response);
             var answer = jQuery.parseJSON(response);
             var info_data = $('.info-data');
             var block_error = $('.for-error');
@@ -20,7 +19,6 @@ $( "#customer-from" ).on( "submit", function( event ) {
             block_error.hide();
             info_data.show();
 
-            console.log(answer);
             $('.contracts-added').remove();
 
             // Print Info about customer
