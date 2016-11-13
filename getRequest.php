@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/PersonsFactoryAbstract.class.php';
+require __DIR__ . '/PersonsFactory.interface.php';
 require __DIR__ . '/CustomersFactory.class.php';
 
 require __DIR__ . '/Customer.interface.php';

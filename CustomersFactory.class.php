@@ -1,6 +1,6 @@
 <?php
 
-class CustomersFactory extends PersonsFactoryAbstract
+class CustomersFactory implements PersonsFactoryInterface
 {
     protected static $personsCache = [];
 

@@ -8,6 +8,9 @@ $( "#customer-from" ).on( "submit", function( event ) {
         data,
         function(response){
             var answer = jQuery.parseJSON(response);
+
+            console.log(response);
+
             var info_data = $('.info-data');
             var block_error = $('.for-error');
             if (answer.error !== undefined) {

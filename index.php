@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
 	<title>тестовое задание</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	<link rel="stylesheet" href="./css/bootstrap.min.css"
 		  crossorigin="anonymous">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css"
 		  crossorigin="anonymous">
     <style>
         .help-block {
@@ -46,7 +46,7 @@
 </div>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+<script src="./js/bootstrap.min.js"
 		crossorigin="anonymous"></script>
 <script src="./js/jquery.form.validation.js"></script>
 <script src='./js/main.js'></script>
