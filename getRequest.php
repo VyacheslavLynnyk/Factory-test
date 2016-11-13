@@ -18,16 +18,13 @@ if ($_POST) {
 
         $customerFactory = new CustomersFactory();
         $customerFactory->search($search);
+        $data = $customerFactory->getData($status);
 
-        $data = $customerFactory->getData($status);
-        $customerFactory->search($search);
-        $data = $customerFactory->getData($status);
         if ($data !== false) {
-            include 'template.php';
+            echo json_encode($data);
             exit;
         }
     }
-
+    echo json_encode(['error' => 'Нет клиента по данному запросу']);
 }
 ?>
-<h3>Нет клиента по данному запросу</h3>

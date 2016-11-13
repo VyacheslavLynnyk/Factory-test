@@ -1,40 +1,34 @@
-<table>
+<br>
+<table class="table">
     <tr>
         <td colspan=2><b>информация про клиента</b></td>
     </tr>
     <tr>
-        <td>название клиента</td>
-        <td><?= $data['info']['name_customer'] ?></td>
+        <td >название клиента</td>
+        <td class="name-customer"></td>
     </tr>
     <tr>
-        <td>компания</td>
-        <td><?= $data['info']['company'] ?></td>
+        <td >компания</td>
+        <td class="company">[company]</td>
     </tr>
-    <?php foreach ($data['contracts'] as $contract) : ?>
-        <tr>
-            <td colspan=2><b>информация про договор</b></td>
-        </tr>
-        <tr>
-            <td>номер договора</td>
-            <td><?= $contract['number'] ?></td>
-        </tr>
-        <tr>
-            <td>дата подписания</td>
-            <td><?= $contract['date_sign'] ?></td>
-        </tr>
-    <?php endforeach; ?>
-    <?php if (isset($data['services']) && is_array($data['services']) && sizeof($data['services']) > 0) : ?>
+    <tr>
+        <td colspan=2><b>информация про договор</b></td>
+    </tr>
+    <tr class="contracts">
+        <td >номер договора</td>
+        <td class="contracts-number-1">[number]</td>
+    </tr>
+    <tr>
+        <td >дата подписания</td>
+        <td class="contracts-sign-1">[date_sign]</td>
+    </tr>
     <tr>
         <td colspan=2><b>информация про сервисы</b></td>
     </tr>
     <tr>
-        <td>
-            <?php echo "<pre>"; print_r($data); echo "</pre>"; ?>
-            <!-- в services_name вывести название сервисов через <br> -->
-            <?php foreach ($data['services'] as $service) : ?>
-                <?= $service['title_service'] . '<br>' ?>
-            <?php endforeach; ?>
+        <td class="services-name">
+            [services_name]
+        <!-- в services_name вывести название сервисов через <br> -->
         </td>
     </tr>
-    <?php endif; ?>
 </table>

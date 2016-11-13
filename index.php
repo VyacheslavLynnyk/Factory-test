@@ -9,7 +9,11 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
 		  crossorigin="anonymous">
-	
+    <style>
+        .help-block {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -33,7 +37,10 @@
 		</div>
 		<button type="submit" class="btn btn-default send">Отправить</button>
 	</form>
-	<div class="info-data"></div>
+	<div class="info-data">
+		<?php include 'template.php'; ?>
+	</div>
+    <h3 class="for-error" style="display: none;"></h3>
 
 
 </div>
